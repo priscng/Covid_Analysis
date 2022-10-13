@@ -90,8 +90,8 @@ GROUP BY location, date, population
 ORDER BY highest_infection_rate_percent DESC;
 
 -- 7. Total Population vs Vaccinations
--- Perform rolling count for the vaccinations with window function
--- Use CTE in order to perform the calculation using the created rolling vaccination data
+-- Perform rolling count for the people vaccinated with window function
+-- Use CTE in order to perform the calculation using the created rolling people vaccinated data
 WITH pop_vac AS (
 	SELECT
 		d.continent,
@@ -136,7 +136,6 @@ SELECT
 	ROUND((MAX(v.people_fully_vaccinated::NUMERIC)/MAX(d.population))*100, 2) AS total_people_vac_percent,
 	MAX(v.total_vaccinations) AS total_vaccinations,
 	MAX(v.total_boosters) AS total_boosters
-	
 FROM covid_death AS d
 JOIN covid_vac AS v
 	ON d.location = v.location

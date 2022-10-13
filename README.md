@@ -12,6 +12,6 @@ The dataset is extracted from [Our World in Data](https://ourworldindata.org/cov
 
 
 ## Tools Adopted
-- Postgres SQL 14
+- PostgresSQL 14
 - PySpark
 - Tableau 2022.2
