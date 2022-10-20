@@ -9,6 +9,7 @@ In this project, I've also explored building an ETL pipeline using PySpark.
 
 ## Dataset
 The dataset is extracted from [Our World in Data](https://ourworldindata.org/covid-deaths).
+The visualization can be viewed via this [link](https://public.tableau.com/views/CovidAnalysis_16655844010440/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link).
 
 
 ## Tools Adopted
